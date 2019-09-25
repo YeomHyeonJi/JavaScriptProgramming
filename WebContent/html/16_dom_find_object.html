@@ -34,7 +34,7 @@
 				var inputMid = document.querySelector("#joinForm [name=mid]");
 				console.log(inputMid.value);
 				
-				var inputPass = document.querySelector("#joinForm [name=mpassword]");
+				var inputPass = document.querySelector("#joinForm [name=password]");
 				var password = inputPass.value;
 				if(password == ""){
 					window.alert("패스워드 안 넣을래?");
@@ -53,11 +53,10 @@
 			
 			function fun6(){
 				var form = document.joinForm;
-				var mid = document.joinForm.mid.value;
-				console.log("mid: "+ mid);
-				
-				var mpassword = document.joinForm.mpassword.value;
-				console.log("mpassword: " + mpassword);
+				var mid = document.joinForm.mid.value;	
+				var password = document.joinForm.password.value;
+				console.log("ID: "+ mid);
+				console.log("Password: " + password);
 			}
 			
 		</script>
