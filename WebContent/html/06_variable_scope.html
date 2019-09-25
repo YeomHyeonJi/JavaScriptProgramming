@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type = "text/javascript">
+			var var1 = 10;
+			
+			function fun1(){
+				//로컬변수
+				var var2 = 20;
+				
+				if(true){
+					//로컬변수->블럭 안 함수블럭에 로컬변수는 있지만 if안은 로컬변수 선언 x 
+					var var3 =30;
+					console.log("var1: " + var1);
+					console.log("var2: " + var2);
+					console.log("var3: " + var3);
+				}
+					console.log("var1: " + var1);
+					console.log("var2: " + var2);
+					console.log("var3: " + var3);
+			}
+			
+			console.log("var1: " + var1);
+			
+			fun1();
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
